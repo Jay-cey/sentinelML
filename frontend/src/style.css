@@ -1,5 +1,10 @@
-/* ─── Reset & base ─────────────────────────────────────────────────────────── */
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 :root {
   --bg: #0f0f0f;
@@ -7,14 +12,15 @@
   --border: #2e2e2e;
   --text: #e8e8e8;
   --muted: #888;
-  --accent: #c8fa64;       /* sharp yellow-green — the one pop of color */
+  --accent: #c8fa64; /* sharp yellow-green — the one pop of color */
   --red: #ff4040;
   --green: #3fca78;
-  --font-sans: 'IBM Plex Sans', system-ui, sans-serif;
-  --font-mono: 'IBM Plex Mono', monospace;
+  --font-sans: "IBM Plex Sans", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
 }
 
-html, body {
+html,
+body {
   background: var(--bg);
   color: var(--text);
   font-family: var(--font-sans);
@@ -23,7 +29,7 @@ html, body {
   min-height: 100vh;
 }
 
-/* ─── Layout ────────────────────────────────────────────────────────────────── */
+/* Layout  */
 .app {
   max-width: 1100px;
   margin: 0 auto;
@@ -62,7 +68,7 @@ html, body {
   gap: 32px;
 }
 
-/* ─── Section cards ─────────────────────────────────────────────────────────── */
+/* Section cards */
 .section {
   border: 1px solid var(--border);
   background: var(--surface);
@@ -89,7 +95,7 @@ html, body {
   padding: 24px 20px;
 }
 
-/* ─── Buttons ───────────────────────────────────────────────────────────────── */
+/* Buttons */
 .btn {
   font-family: var(--font-mono);
   font-size: 0.72rem;
@@ -101,7 +107,10 @@ html, body {
   background: transparent;
   color: var(--text);
   cursor: pointer;
-  transition: background 0.15s, color 0.15s, border-color 0.15s;
+  transition:
+    background 0.15s,
+    color 0.15s,
+    border-color 0.15s;
 }
 
 .btn:hover {
@@ -123,7 +132,7 @@ html, body {
   cursor: not-allowed;
 }
 
-/* ─── Badges ────────────────────────────────────────────────────────────────── */
+/* Badges */
 .badge {
   font-family: var(--font-mono);
   font-size: 0.68rem;
@@ -138,16 +147,16 @@ html, body {
 .badge-anomaly {
   color: var(--red);
   border-color: var(--red);
-  background: rgba(255,64,64,0.08);
+  background: rgba(255, 64, 64, 0.08);
 }
 
 .badge-normal {
   color: var(--green);
   border-color: var(--green);
-  background: rgba(63,202,120,0.08);
+  background: rgba(63, 202, 120, 0.08);
 }
 
-/* ─── Predict form ──────────────────────────────────────────────────────────── */
+/* Predict form */
 .predict-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
@@ -185,7 +194,7 @@ html, body {
   border-color: var(--accent);
 }
 
-/* ─── Predict result ────────────────────────────────────────────────────────── */
+/* Predict result */
 .predict-result {
   margin-top: 20px;
   padding: 16px;
@@ -218,7 +227,7 @@ html, body {
   background: var(--border);
 }
 
-/* ─── Drift table supplement ─────────────────────────────────────────────────── */
+/* Drift table supplement */
 .psi-legend {
   display: flex;
   gap: 20px;
@@ -242,7 +251,7 @@ html, body {
   border-radius: 0;
 }
 
-/* ─── Status indicator ──────────────────────────────────────────────────────── */
+/* Status indicator */
 .status-row {
   display: flex;
   gap: 12px;
@@ -271,7 +280,7 @@ html, body {
   background: var(--red);
 }
 
-/* ─── Error / loading ───────────────────────────────────────────────────────── */
+/* Error / loading */
 .msg {
   font-family: var(--font-mono);
   font-size: 0.75rem;
@@ -283,7 +292,7 @@ html, body {
   color: var(--red);
 }
 
-/* ─── Custom tooltip ─────────────────────────────────────────────────────────── */
+/* Custom tooltip */
 .custom-tooltip {
   background: #111;
   border: 1px solid var(--border);
