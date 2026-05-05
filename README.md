@@ -143,9 +143,7 @@ npx vite          # → http://localhost:3000
 
 ---
 
-## Frontend (Live)
-
-**Deployed frontend:** `[YOUR_NETLIFY/VERCEL_LINK_HERE]`
+## Frontend
 
 > **Note:** The FastAPI backend is not hosted — it is designed to run locally against your own copy of the data and model. The live frontend link connects to `http://localhost:8000` by default; to use the deployed UI against your local API, ensure the backend is running and CORS is satisfied (already configured for `localhost:3000`).
 
